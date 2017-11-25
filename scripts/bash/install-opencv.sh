@@ -11,10 +11,7 @@
 # | Debian 9.0     | OpenCV 3.2.0 | OK   | 25 Jun 2017 |
 
 # 1. KEEP UBUNTU OR DEBIAN UP TO DATE
-
-sudo apt-get -y update
-sudo apt-get -y upgrade
-sudo apt-get -y dist-upgrade
+# Edited by Xaiyeon
 sudo apt-get -y autoremove
 
 
@@ -56,7 +53,7 @@ cd OpenCV
 mkdir build
 cd build
 cmake -DWITH_QT=ON -DWITH_OPENGL=ON -DFORCE_VTK=ON -DWITH_TBB=ON -DWITH_GDAL=ON -DWITH_XINE=ON -DBUILD_EXAMPLES=ON -DENABLE_PRECOMPILED_HEADERS=OFF ..
-make -j4
+make -j1
 sudo make install
 sudo ldconfig
 
